@@ -18,6 +18,7 @@ function Index() {
         <title>Gatsby + Node.js (TypeScript) API</title>
       </Helmet>
       <h1>swag</h1>
+      <img src="https://pbs.twimg.com/ext_tw_video_thumb/1253752330996142080/pu/img/lXhPlUGqEq5pzOcH.jpg" alt="" />
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
     </main>
