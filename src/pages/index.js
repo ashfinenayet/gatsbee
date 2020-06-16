@@ -1,7 +1,4 @@
 import React from 'react';
-
-import '../styles/index.css';
-
 import ReactDOM from 'react-dom';
 
 const green = '#39D1B4';
