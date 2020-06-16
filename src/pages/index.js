@@ -1,33 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import "../styles/index.css";
 
-const green = '#39D1B4';
-const yellow = '#FFD712';
+function Index() {
+  const [date, setDate] = useState(null);
+  useEffect(() => {
+    async function getDate() {
+      const res = await fetch("/api/date");
+      const newDate = await res.text();
+      setDate(newDate);
+    }
+    getDate();
+  }, []);
+  return (
+    <main>
+      <Helmet>
+        <title>Gatsby + Node.js (TypeScript) API</title>
+      </Helmet>
+      <h1>Gatsby + Node.js (TypeScript) API</h1>
 
-class Toggle extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = { color: green };
-    this.changeColor = this.changeColor.bind(this);
-  }
-  
-  changeColor() {
-    const newColor = this.state.color == green ? yellow : green;
-    this.setState({ color: newColor });
-  }
-  
-  render() {
-    return (
-      <div style={{background: this.state.color}}>
-        <h1>
-          Change my color
-        </h1>
-        <button onClick={this.changeColor}>
-  				Change color
-				</button>
-      </div>
-    );
-  }
+      <h2>The date according to Node.js (TypeScript) is:</h2>
+      <p>{date ? date : "Loading date..."}</p>
+    </main>
+  );
 }
 
-ReactDOM.render(<Toggle />, document.getElementById('app'));
+export default Index;
