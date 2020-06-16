@@ -2,8 +2,8 @@ main {
   align-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
   hyphens: auto;
   line-height: 1.65;
   margin: 0 auto;
@@ -13,7 +13,16 @@ main {
   text-align: center;
 }
 h1 {
-  font-size: 45px;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
 }
 h2 {
   margin-top: 1.5em;
@@ -40,5 +49,5 @@ pre {
 }
 code:before,
 code:after {
-  content: '\`';
+  content: "\`";
 }
