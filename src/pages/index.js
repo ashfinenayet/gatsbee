@@ -17,10 +17,12 @@ function Index() {
       <Helmet>
         <title>Gatsby + Node.js (TypeScript) API</title>
       </Helmet>
-      <h1>swag</h1>
-      <img src="https://pbs.twimg.com/ext_tw_video_thumb/1253752330996142080/pu/img/lXhPlUGqEq5pzOcH.jpg" alt="" />
+      <div id="shadowBox">
+      <h1 className="rainbow rainbow_text_animated">swag</h1>
+      <img src="https://i.imgur.com/sjvtlq0.png" alt="" />
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
+      </div>
     </main>
   );
 }

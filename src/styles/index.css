@@ -2,8 +2,8 @@ main {
   align-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
   hyphens: auto;
   line-height: 1.65;
   margin: 0 auto;
@@ -13,17 +13,10 @@ main {
   text-align: center;
 }
 h1 {
-  background-image: linear-gradient(
-    to left,
-    violet,
-    indigo,
-    blue,
-    green,
-    yellow,
-    orange,
-    red
-  );
+  font-size: 45px;
+  align-content: center;
 }
+
 h2 {
   margin-top: 1.5em;
 }
@@ -40,6 +33,31 @@ a {
 a:hover {
   border-bottom: 1px solid #0076ff;
 }
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 270px;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
 code,
 pre {
   color: #d400ff;
@@ -49,5 +67,5 @@ pre {
 }
 code:before,
 code:after {
-  content: "\`";
+  content: '\`';
 }
