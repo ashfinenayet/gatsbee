@@ -21,7 +21,7 @@ function Index() {
       <h1 className="rainbow rainbow_text_animated">swag</h1>
       </div>
       <div className="image">
-      <img src="https://i.imgur.com/sjvtlq0.png" alt="" />
+      <img src="https://i.imgur.com/sjvtlq0.png" width="100" height="50" alt="" />
       </div>
       <h2>The date according to Node.js (TypeScript) is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
