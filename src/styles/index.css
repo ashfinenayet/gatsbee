@@ -2,8 +2,8 @@ main {
   align-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
   hyphens: auto;
   line-height: 1.65;
   margin: 0 auto;
@@ -33,7 +33,11 @@ a {
 a:hover {
   border-bottom: 1px solid #0076ff;
 }
-
+.image {
+  align-content: center;
+  background-size: cover;
+  background-position: center;
+}
 .rainbow {
   text-align: center;
   text-decoration: underline;
@@ -42,7 +46,14 @@ a:hover {
   letter-spacing: 5px;
 }
 .rainbow_text_animated {
-  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  background: linear-gradient(
+    to right,
+    #6666ff,
+    #0099ff,
+    #00ff00,
+    #ff3399,
+    #6666ff
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -51,12 +62,13 @@ a:hover {
 }
 
 @keyframes rainbow_animation {
-  0%,100% {
-      background-position: 0 0;
+  0%,
+  100% {
+    background-position: 0 0;
   }
 
   50% {
-      background-position: 100% 0;
+    background-position: 100% 0;
   }
 }
 code,
@@ -68,5 +80,5 @@ pre {
 }
 code:before,
 code:after {
-  content: '\`';
+  content: "\`";
 }
