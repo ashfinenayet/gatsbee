@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from 'react-bootstrap/lib/Navbar';
 
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
