@@ -33,16 +33,7 @@ a {
 a:hover {
   border-bottom: 1px solid #0076ff;
 }
-.image {
-  
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 90%;
-  align-content: center;
-  margin: 0 auto;
-  z-index: 1000;
-}
+
 .rainbow {
   text-align: center;
   text-decoration: underline;
