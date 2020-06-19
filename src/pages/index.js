@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Component } from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/index.css';
+
+import { Nav, Navbar } from 'react-bootstrap';
 
 function Index() {
   const [date, setDate] = useState(null);
@@ -13,6 +15,7 @@ function Index() {
     getDate();
   }, []);
   return (
+    
     <main>
       <Helmet>
         <title>Gatsby + Node.js (TypeScript) API</title>
@@ -29,5 +32,34 @@ function Index() {
     </main>
   );
 }
+
+class MyNavbar extends React.Component{
+    render() {
+        return (
+           <Navbar>
+            <Navbar.Header>
+              <Navbar.Brand>
+                <a href="#home">My Brand</a>
+              </Navbar.Brand>
+            </Navbar.Header>
+            <Nav>
+              <NavItem href="#">
+                Home
+              </NavItem>
+              <NavItem href="#">
+                About
+              </NavItem>
+              <NavItem href="#">
+                FAQ
+              </NavItem>
+              <NavItem href="#">
+                Contact Us
+              </NavItem>
+            </Nav>
+          </Navbar>
+        );
+    }
+}
+
 
 export default Index;
