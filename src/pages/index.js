@@ -19,7 +19,7 @@ function Index() {
     
     <main>
       <Helmet>
-        <title>Gatsby + Node.js (TypeScript) API</title>
+        <title>Ashfin's Website</title>
       </Helmet>
       <div id="shadowBox">
         <h1 className="rainbow rainbow_text_animated">swag</h1>
