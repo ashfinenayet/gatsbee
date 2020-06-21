@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 /* import {Navlink} from 'reacter-router-dom'; */
 import{Navbar, Nav, NavItem} from 'react-bootstrap';
 
-export class Navigation extends Component {
+ class Navigation extends Component {
     render() {
         return (
            <Navbar>
@@ -29,3 +29,4 @@ export class Navigation extends Component {
         );
     }
 }
+export default Navbar;

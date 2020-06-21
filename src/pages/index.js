@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Component } from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/index.css';
-import {Navigation} from '../pages/navbar.js';
+import Navigation from '../pages/navbar.js';
 
 function Index() {
   const [date, setDate] = useState(null);
