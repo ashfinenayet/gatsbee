@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from '..src/pages/Home.js';
-import { About } from '..src/pages/About.js';
-import { Contact } from '..src/pages/contact.js';
-import { NavigationBar } from '..src/pages/components/navbar.js';
+import { Home } from './Home';
+import { About } from './About';
+import { Contact } from './contact';
+import { NavigationBar } from './components/navbar';
+import { Layout } from './components/Layout';
 
 class App extends Component {
     render() {
