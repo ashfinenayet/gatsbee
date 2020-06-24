@@ -1,4 +1,5 @@
 import React from "react";
+import { render } from "react-dom";
 import { Router, Link, Redirect, Location } from "@reach/router";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../styles/app.css";
