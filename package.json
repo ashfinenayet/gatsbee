@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@reach/router": "^1.3.3",
+    "@statickit/react": "^2.1.1",
     "gatsby": "^2.23.8",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-manifest": "^2.0.5",
@@ -23,6 +24,7 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "clean": "gatsby clean"
   }
 }
