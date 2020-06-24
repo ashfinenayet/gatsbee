@@ -1,27 +1,49 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './Home';
-import { About } from './About';
-import { Contact } from './contact';
-import { NavigationBar } from './components/navbar';
-import { Layout } from './components/Layout';
+import React from "react";
+import { Router, Link, Redirect, Location } from "@reach/router";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import "../styles/app.css";
 
-class App extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <NavigationBar />
-                <Layout>
-                    <Router>
-                        <Switch>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/about" component={About} />
-                            <Route path="/contact" component={Contact} />
-                        </Switch>
-                    </Router>
-                </Layout>
-            </React.Fragment>
 
-        );
-    }
-}
+const App = () => (
+  <div className="app">
+    <nav className="nav">
+      <Link to="/">Home</Link>{" "}
+      <Link to="page/2">Contact Me</Link>{" "}
+      <Link to="page/3">About</Link>{" "}
+    </nav>
+
+    <FadeTransitionRouter>
+      <Page path="/" page="1" />
+      <Page path="page/:page" />
+    </FadeTransitionRouter>
+  </div>
+);
+
+const FadeTransitionRouter = props => (
+  <Location>
+    {({ location }) => (
+      <TransitionGroup className="transition-group">
+        <CSSTransition key={location.key} classNames="fade" timeout={500}>
+          {/* the only difference between a router animation and
+              any other animation is that you have to pass the
+              location to the router so the old screen renders
+              the "old location" */}
+          <Router location={location} className="router">
+            {props.children}
+          </Router>
+        </CSSTransition>
+      </TransitionGroup>
+    )}
+  </Location>
+);
+
+const Page = props => (
+  <div
+    className="page"
+    style={{ background: `hsl(${props.page * 75}, 60%, 60%)` }}
+  >
+    {props.page}
+  </div>
+);
+
+export default App;
