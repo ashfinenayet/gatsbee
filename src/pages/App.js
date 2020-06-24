@@ -1,50 +1,42 @@
-import React from "react";
-import { render } from "react-dom";
-import { Router, Link, Redirect, Location } from "@reach/router";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-import "../styles/app.css";
+import React, { useEffect, useState, Component } from 'react';
+import { Helmet } from 'react-helmet';
+import '../styles/index.css';
 
 
-const App = () => (
-  <div className="app">
-    <nav className="nav">
-      <Link to="/">Home</Link>{" "}
-      <Link to="page/2">Contact Me</Link>{" "}
-      <Link to="page/3">About</Link>{" "}
-    </nav>
+function Index() {
+  const [date, setDate] = useState(null);
+  useEffect(() => {
+    async function getDate() {
+      const res = await fetch('/api/date');
+      const newDate = await res.text();
+      setDate(newDate);
+    }
+    getDate();
+  }, []);
+  return (
+    
 
-    <FadeTransitionRouter>
-      <Page path="/" page="1" />
-      <Page path="page/:page" />
-    </FadeTransitionRouter>
-  </div>
-);
+    
+    <main>
+      <Helmet>
+        <title>Ashfin's Website</title>
+      </Helmet>
+      <div id="shadowBox">
+        <h1 className="rainbow rainbow_text_animated">swag</h1>
+      </div>
+      <div className="image">
+        <img src="https://i.imgur.com/sjvtlq0.png" width="700" height="350" alt="swag" className="image" />
+      </div>
+      <h2>The date according to Node.js (TypeScript) is:</h2>
+      <p>{date ? date : 'Loading date...'}</p>
 
-const FadeTransitionRouter = props => (
-  <Location>
-    {({ location }) => (
-      <TransitionGroup className="transition-group">
-        <CSSTransition key={location.key} classNames="fade" timeout={500}>
-          {/* the only difference between a router animation and
-              any other animation is that you have to pass the
-              location to the router so the old screen renders
-              the "old location" */}
-          <Router location={location} className="router">
-            {props.children}
-          </Router>
-        </CSSTransition>
-      </TransitionGroup>
-    )}
-  </Location>
-);
+    </main>
+    
+  );
+}
 
-const Page = props => (
-  <div
-    className="page"
-    style={{ background: `hsl(${props.page * 75}, 60%, 60%)` }}
-  >
-    {props.page}
-  </div>
-);
 
-export default App;
+    
+
+
+export default Index;
