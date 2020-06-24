@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Component } from 'react';
 import { Helmet } from 'react-helmet';
 import '../styles/index.css';
-
+import Layout from "../components/layout"
 
 function Index() {
   const [date, setDate] = useState(null);
@@ -21,22 +21,23 @@ function Index() {
       <Helmet>
         <title>Ashfin's Website</title>
       </Helmet>
-      <div id="shadowBox">
-        <h1 className="rainbow rainbow_text_animated">swag</h1>
-      </div>
-      <div className="image">
-        <img src="https://i.imgur.com/sjvtlq0.png" width="700" height="350" alt="swag" className="image" />
-      </div>
-      <h2>The date according to Node.js (TypeScript) is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
-
+      <Layout>
+        <div id="shadowBox">
+          <h1 className="rainbow rainbow_text_animated">swag</h1>
+        </div>
+        <div className="image">
+          <img src="https://i.imgur.com/sjvtlq0.png" width="700" height="350" alt="swag" className="image" />
+        </div>
+        <h2>The date according to Node.js (TypeScript) is:</h2>
+        <p>{date ? date : 'Loading date...'}</p>
+      </Layout>
     </main>
-    
+
   );
 }
 
 
-    
+
 
 
 export default Index;
