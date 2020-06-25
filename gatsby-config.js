@@ -11,6 +11,7 @@ module.exports = {
         short_name: 'Gatsby + Node.js (TypeScript)',
         start_url: '/',
         icon: 'src/images/1200px-IPA_-_æ_(ash)_+_diacritic_“lowered”.svg.png',
+        
       },
     },
   ],
