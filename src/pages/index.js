@@ -21,8 +21,8 @@ const Index = () => (
       <div id="shadowBox">
         <h1 className="rainbow rainbow_text_animated">Ashfin Enayet</h1>
       </div>
-      <div className="image">
-        <img src="https://i.imgur.com/ILfV3h2.gif" width="700" height="350" alt="gif swagger" className="image" />
+      <div className="gif">
+        <img src="https://i.imgur.com/ILfV3h2.gif" width="500" height="500" alt="gif swagger" className="gif" />
       </div>
 
     </Layout>
