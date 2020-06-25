@@ -22,7 +22,7 @@ const Index = () => (
         <h1 className="rainbow rainbow_text_animated">Ashfin Enayet</h1>
       </div>
       <div className="image">
-        <img src="https://i.imgur.com/sjvtlq0.png" width="700" height="350" alt="swag" className="image" />
+        <img src="src/images/MOSHED-2020-6-25-14-37-39.gif" width="700" height="350" alt="gif swagger" className="image" />
       </div>
 
     </Layout>
