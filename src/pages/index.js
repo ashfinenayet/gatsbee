@@ -15,11 +15,11 @@ const Index = () => (
 
   <main>
     <Helmet>
-      <title>Ashfin's Website</title>
+      <title>Ashfin Enayet</title>
     </Helmet>
     <Layout>
       <div id="shadowBox">
-        <h1 className="rainbow rainbow_text_animated">swag</h1>
+        <h1 className="rainbow rainbow_text_animated">Ashfin Enayet</h1>
       </div>
       <div className="image">
         <img src="https://i.imgur.com/sjvtlq0.png" width="700" height="350" alt="swag" className="image" />
