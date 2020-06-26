@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react'
 import * as emailjs from 'emailjs-com'
 import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
+import Layout from '../components/Layout';
 
 class ContactForm extends Component {
     state = {
@@ -41,7 +42,7 @@ class ContactForm extends Component {
   render() {
       return (
         <>
-          
+          <Layout>
             <h1 className="p-heading1">Get in Touch</h1>
             <Form onSubmit={this.handleSubmit.bind(this)}>
               <FormGroup controlId="formBasicEmail">
@@ -91,7 +92,7 @@ class ContactForm extends Component {
                 Submit
               </Button>
             </Form>
-          
+            </Layout>
         </>
       )
     }
