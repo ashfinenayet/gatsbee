@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
       <header style={{ marginBottom: `1.5rem` }}>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ color: '#D83F87', display: `inline` }}>Ashfin Enayet</h3>
+          <h3 style={{ color: 'bisque' , display: `inline` }}>Ashfin Enayet</h3>
         </Link>
         <ul style={{ color: '#66FCF1', listStyle: `none`, float: `right` }}>
           <ListLink to="/">Home</ListLink>

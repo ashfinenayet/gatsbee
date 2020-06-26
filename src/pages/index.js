@@ -21,9 +21,7 @@ const Index = () => (
       <div id="shadowBox">
         <h1 className="rainbow rainbow_text_animated">Ashfin Enayet</h1>
       </div>
-      <div className="gif">
-        <img src="https://i.imgur.com/8BD1W2a.gif" width="500" height="500" alt="AE logo" className="gif" />
-      </div>
+     
 
     </Layout>
   </main>
