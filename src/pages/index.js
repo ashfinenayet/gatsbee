@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/index.css';
 import Layout from '../components/Layout.js';
 
