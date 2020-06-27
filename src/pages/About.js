@@ -25,7 +25,7 @@ const About = () => (
         </Helmet>
         <Layout>
         
-            <h1 style={{ margin: `0.5rem auto`, maxWidth: 650,}}>About Me</h1>
+            <h1>About Me</h1>
             <h2>Ashfin Enayet</h2>
 
 
@@ -33,10 +33,9 @@ const About = () => (
             <div className = 'button-container'>
             <Button color ="danger" onClick  = {openLink}>Get Involved</Button>
             
-            <SocialFollow/>
             </div>
 
-        
+        <SocialFollow/>
         </Layout>
         </section>
     

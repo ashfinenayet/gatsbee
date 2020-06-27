@@ -10,8 +10,10 @@ import '../styles/socialfollow.css';
 export default function SocialFollow() {
     return (
         <div>
-            <h4>Social Media</h4>
+            
             <div className="social-container">
+            
+            
 
 
                 <a
