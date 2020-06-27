@@ -13,7 +13,7 @@ const Index = () => (
 
 
 
-  <main>
+  <section className="content">
     <Helmet>
       <title>Ashfin Enayet</title>
     </Helmet>
@@ -24,7 +24,7 @@ const Index = () => (
      
 
     </Layout>
-  </main>
+  </section>
 
 
 )

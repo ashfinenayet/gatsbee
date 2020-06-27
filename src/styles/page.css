@@ -2,3 +2,26 @@ main {
     font-family: 'Lato', sans-serif;
     color: bisque;
 }
+h1 {
+    
+    margin: auto;
+    padding: auto;
+}
+h2 {
+    padding: auto;
+    margin: auto;
+}
+
+.content {
+    color: bisque;
+    
+}
+
+.post-listing {
+    text-align: justify;
+}
+
+.button {
+    align-items: center;
+    padding: 0px 250px;
+}

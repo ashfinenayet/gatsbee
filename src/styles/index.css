@@ -48,13 +48,7 @@ a {
 a:hover {
   border-bottom: 1px solid #0076ff;
 }
-.gif {
-  align-content: center;
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+
 .rainbow {
   text-align: center;
   text-decoration: underline;

@@ -3,6 +3,7 @@ import '../styles/page.css';
 import { Button } from 'reactstrap';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
+import SocialFollow from '../components/SocialFollow';
 var links = new Array();
 
 links[0] = 'https://support.eji.org/give/153413/#!/donation/checkout';
@@ -16,22 +17,25 @@ function openLink() {
     return false;
 }
 const About = () => (
-    <main>
+    <section className="content">
         <Helmet>
             <title>About Me</title>
         </Helmet>
         <Layout>
-        <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
+        <div>
             <h1>About Me</h1>
             <h2>Ashfin Enayet</h2>
 
 
             <p>that is quite literally my name. Currently an incoming freshman at Virginia Commonwealth University. Click the button below to find out ways to support BLM</p>
+            <div className="button">
             <Button color="danger" onClick={openLink}>Get Involved</Button>
+            </div>
+            <SocialFollow/>
 
         </div>
         </Layout>
-    </main>
+    </section>
 )
 
 export default About;
