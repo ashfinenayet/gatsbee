@@ -1,10 +1,10 @@
 import React from 'react';
 
- const About = () => (
+ const Error = () => (
     <div>
         <h1>cant find it </h1>
         
     </div>
 )
 
-export default About;
+export default Error;

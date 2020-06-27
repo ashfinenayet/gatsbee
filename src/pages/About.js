@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/page.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Button } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
@@ -18,25 +18,28 @@ function openLink() {
     return false;
 }
 const About = () => (
-    <main>
+    
+        <section className ='content'>
         <Helmet>
             <title>About Me</title>
         </Helmet>
         <Layout>
-        <div>
-            <h1>About Me</h1>
+        
+            <h1 style={{ margin: `0.5rem auto`, maxWidth: 650,}}>About Me</h1>
             <h2>Ashfin Enayet</h2>
 
 
             <p>that is quite literally my name. Currently an incoming freshman at Virginia Commonwealth University. Click the button below to find out ways to support BLM</p>
-            <div className="button">
-            <Button outline color="danger" onClick={openLink}>Get Involved</Button>
-            </div>
+            <div className = 'button-container'>
+            <Button color ="danger" onClick  = {openLink}>Get Involved</Button>
+            
             <SocialFollow/>
+            </div>
 
-        </div>
+        
         </Layout>
-    </main>
+        </section>
+    
 )
 
 export default About;

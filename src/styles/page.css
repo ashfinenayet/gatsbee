@@ -1,6 +1,8 @@
 main {
     font-family: 'Lato', sans-serif;
     color: bisque;
+    margin: auto;
+    padding: auto;
 }
 
 h1 {
@@ -22,3 +24,12 @@ h2 {
     text-align: justify;
 }
 
+.button-container {
+    height: 100%; 
+    width:100%; 
+    margin: -10px -60px; 
+    position: relative;
+    top:50%; 
+    left:50%;
+}
+ 
