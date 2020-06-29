@@ -19,7 +19,9 @@ function openLink() {
 }
 const About = () => (
     
-        <section className ='content'>
+        <main>
+
+       
         <Helmet>
             <title>About Me</title>
         </Helmet>
@@ -37,7 +39,7 @@ const About = () => (
 
         <SocialFollow/>
         </Layout>
-        </section>
+        </main>
     
 )
 
