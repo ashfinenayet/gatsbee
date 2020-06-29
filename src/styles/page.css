@@ -3,12 +3,20 @@ main {
     color: bisque;
     margin: auto;
     padding: auto;
+    overflow-x: hidden;
 }
 
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
 h1 {
     
     margin: auto;
     padding: auto;
+    color: bisque;
 }
 h2 {
     padding: auto;
@@ -16,20 +24,16 @@ h2 {
 }
 
 .content {
+    font-family: 'Lato', sans-serif;
     color: bisque;
-    
+    margin: auto;
+    padding: auto;
+
 }
 
 .post-listing {
-    text-align: justify;
+    text-align: center;
 }
 
-.button-container {
-    height: 100%; 
-    width:100%; 
-    margin: -10px -74px; 
-    position: relative;
-    top:50%; 
-    left:50%;
-}
+
  

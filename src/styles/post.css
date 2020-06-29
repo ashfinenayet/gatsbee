@@ -1,0 +1,31 @@
+.post {
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #ed2939;
+    
+  }
+  
+  .post .post-title {
+    font-size: 3em;
+    margin: 0;
+    color: bisque;
+  }
+  
+  .post .post-description {
+    font-size: 1.5em;
+    color: antiquewhite;
+  }
+  
+  .post .post-written-by {
+    font-size: 1em;
+    color: antiquewhite;
+  }
+  
+  .post a {
+    background-color: white;
+    color: black;
+    padding: 16px 24px;
+    text-decoration: none;
+    margin-top: 16px;
+    display: inline-block;
+  }
