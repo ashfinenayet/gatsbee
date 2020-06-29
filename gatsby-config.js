@@ -3,15 +3,13 @@ module.exports = {
     title: 'Gatsby + Node.js (TypeScript) API',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`, 
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-remark',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'Gatsby + Node.js (TypeScript) API',
-        short_name: 'Gatsby + Node.js (TypeScript)',
-        start_url: '/',
-        icon: 'src/images/1200px-IPA_-_æ_(ash)_+_diacritic_“lowered”.svg.png',
-        
+        name: `src`,
+        path: `${__dirname}/src`,
       },
     },
   ],
