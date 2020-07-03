@@ -14,12 +14,14 @@
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.8",
     "gatsby-image": "^2.0.15",
-    "gatsby-plugin-manifest": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-catch-links": "^2.3.9",
+    "gatsby-plugin-google-analytics": "^2.3.8",
+    "gatsby-plugin-manifest": "^2.4.16",
+    "gatsby-plugin-react-helmet": "^3.3.8",
     "gatsby-plugin-statickit": "^1.1.1",
     "gatsby-plugin-transition-link": "^1.20.2",
-    "gatsby-source-filesystem": "^2.3.14",
-    "gatsby-transformer-remark": "^2.8.19",
+    "gatsby-source-filesystem": "^2.3.16",
+    "gatsby-transformer-remark": "^2.8.22",
     "markdown-to-jsx": "^6.11.4",
     "proptypes": "^1.1.0",
     "react": "^16.5.1",
@@ -29,6 +31,7 @@
     "react-router": "3.0.5",
     "react-router-dom": "^5.2.0",
     "react-transition-group": "^4.4.1",
+    "react-typography": "^0.16.19",
     "reactstrap": "^8.5.1",
     "styled-components": "^5.1.1"
   },
@@ -41,5 +44,9 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:ashfinenayet/gatsbee.git",
+  "author": "ashfinenayet <ashfin.enayet@gmail.com>",
+  "license": "MIT"
 }

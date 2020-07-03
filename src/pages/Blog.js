@@ -3,22 +3,21 @@ import { graphql } from "gatsby";
 import Layout from '../components/Layout.js';
 import Post from "../components/Post";
 export const AllBlogsQuery = graphql`
-query MyQuery {
-  allMarkdownRemark {
-    edges {
-      node {
-        frontmatter {
-          date
-          title
-          path
-          description
-          author
+  query AllBlogPosts {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            date
+            title
+            description
+            author
+            path
+          }
         }
       }
     }
   }
-}
-
 `
 
 const Blog = ({ data }) => (

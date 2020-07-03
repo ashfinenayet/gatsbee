@@ -10,16 +10,18 @@ export default function Template({ data }) {
     return (
       <Layout>
         <Link to="/Blog/">Back to blogs</Link>
+        <div className="blog">
         <h1>{title}</h1>
         <p>Posted by {author} on {date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
       </Layout>
     )
   };
 
   export const postQuery = graphql`
   query BlogPost($path: String!) {
-       markdownRemark(frontmatter: { path: { eq: $path }}) {
+    markdownRemark(frontmatter: { path: { eq: $path }}) {
       frontmatter {
         author
         date

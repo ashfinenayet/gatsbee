@@ -19,7 +19,7 @@ function openLink() {
 }
 const About = () => (
     
-        <main>
+        <div className="content"> 
 
        
         <Helmet>
@@ -32,14 +32,14 @@ const About = () => (
 
 
             <p>that is quite literally my name. Currently an incoming freshman at Virginia Commonwealth University. Click the button below to find out ways to support BLM</p>
-            <div className = 'button-container'>
+            <div className='buttoncontainer'>
             <Button color ="danger" onClick  = {openLink}>Get Involved</Button>
-            
             </div>
+            
 
         <SocialFollow/>
         </Layout>
-        </main>
+        </div>
     
 )
 

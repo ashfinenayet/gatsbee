@@ -1,11 +1,12 @@
 h1 {
-    
+    align-content: center;
     margin-bottom: 1 rem;
 }
 .social-container {
     
-    padding: 25px 50px ;
+    padding: .004px 200px ;
     align-content: center;
+    margin: .00005rem;
   }
 
 
@@ -23,6 +24,11 @@ a.social:hover {
 
 a.twitter {
     color: #49a1eb;
+    align-items: center;
     
+}
+a.instagram {
+  padding: 25px 50 px;
+  margin-top: auto;
 }
 

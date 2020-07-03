@@ -3,7 +3,6 @@ path: '/blog-post'
 date: '06-29-2020'
 title: "My first Blog"
 author: 'Ashfin Enayet'
-tags: ['The Flash', "Batman", "Superman", "Wally West", "Wonder Woman", "DC"]
 description: "Lemme share a few thoughts"
 ---
 This is my first blog. I have little idea what I am going to use this for but we shall see. I will keep this post very brief. 

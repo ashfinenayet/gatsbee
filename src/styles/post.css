@@ -1,7 +1,8 @@
 .post {
     margin-bottom: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid #ed2939;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
     
   }
   
@@ -13,7 +14,7 @@
   
   .post .post-description {
     font-size: 1.5em;
-    color: antiquewhite;
+    color: bisque;
   }
   
   .post .post-written-by {

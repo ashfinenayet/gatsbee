@@ -35,5 +35,15 @@ h2 {
     text-align: center;
 }
 
-
+.buttoncontainer {
+    height: 100%; 
+    width:100%; 
+    margin: auto; 
+    padding: auto;
+    position: relative;
+    margin-bottom: auto;
+    top: 80%; 
+    bottom: 20%;
+    left:35.5%;
+}
  

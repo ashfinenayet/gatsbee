@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react'
+import { Helmet } from 'react-helmet';
 import * as emailjs from 'emailjs-com'
 import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap'
 import Layout from '../components/Layout';
@@ -43,6 +44,7 @@ class ContactForm extends Component {
       return (
         <>
           <Layout>
+            <Helmet>Contact Me</Helmet>
             <h1 className="p-heading1">Get in Touch</h1>
             <Form onSubmit={this.handleSubmit.bind(this)}>
               <FormGroup controlId="formBasicEmail">
