@@ -1,5 +1,5 @@
 ---
-path: '/blog-post'
+path: '/my-first-blog'
 date: '06-29-2020'
 title: "My first Blog"
 author: 'Ashfin Enayet'

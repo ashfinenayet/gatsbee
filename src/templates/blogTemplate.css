@@ -10,10 +10,11 @@
   }
 p {
     color: bisque;
+    text-align: left;
 }
 
 .blog {
-  
+  color: blanchedalmond;
   margin-bottom: auto;
   margin-top: 20px;
   
