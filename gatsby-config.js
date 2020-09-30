@@ -1,6 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Node.js (TypeScript) API',
+    title: 'Ashfin Enayet',
+    author: "Ashfin Enayet",
+    description: "Just a website about me, THE Ashfin Enayet",
+    siteUrl: "https://ashfin.me/",
+    social: [
+      {
+        name: "twitter",
+        url: "https://twitter.com/Ashfin_Enayet",
+      },
+      {
+        name: "instagram",
+        url: "https://www.instagram.com/a.shfin/",
+      },
+      {
+        name: "github",
+        url: "https://github.com/ashfinenayet",
+      },
+    ],
   },
   plugins: [
     // Shortcut for adding plugins without options.
@@ -49,4 +66,3 @@ module.exports = {
   ],
 }
 
-    
