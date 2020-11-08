@@ -1,6 +1,6 @@
 main {
     font-family: 'Lato', sans-serif;
-    color: bisque;
+    color: #C3073F;
     margin: auto;
     padding: auto;
     overflow-x: hidden;
@@ -16,7 +16,7 @@ h1 {
     
     margin: auto;
     padding: auto;
-    color: bisque;
+    color: #C3073F;
 }
 h2 {
     padding: auto;
@@ -25,7 +25,7 @@ h2 {
 
 .content {
     font-family: 'Lato', sans-serif;
-    color: bisque;
+    color: #C3073F;
     margin: auto;
     padding: auto;
 
@@ -35,15 +35,5 @@ h2 {
     text-align: center;
 }
 
-.buttoncontainer {
-    height: 100%; 
-    width:100%; 
-    margin: auto; 
-    padding: auto;
-    position: relative;
-    margin-bottom: auto;
-    top: 80%; 
-    bottom: 20%;
-    left:35.5%;
-}
+
  

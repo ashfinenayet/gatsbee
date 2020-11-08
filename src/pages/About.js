@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/page.css';
 
-import { Button } from 'react-bootstrap';
+
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import SocialFollow from '../components/SocialFollow';
@@ -31,10 +31,8 @@ const About = () => (
             <h2>Ashfin Enayet</h2>
 
 
-            <p>that is quite literally my name. Currently an incoming freshman at Virginia Commonwealth University. Click the button below to find out ways to support BLM</p>
-            <div className='buttoncontainer'>
-            <Button color ="danger" onClick  = {openLink}>Get Involved</Button>
-            </div>
+            <p>that is quite literally my name. Currently a freshman at Virginia Commonwealth University. </p>
+          
             
 
         <SocialFollow/>

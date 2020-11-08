@@ -4,7 +4,7 @@ h1 {
 }
 .social-container {
     
-    padding: .004px 200px ;
+    padding: .003px 200px ;
     align-content: center;
     margin: .00005rem;
   }
@@ -23,7 +23,7 @@ a.social:hover {
 }
 
 a.twitter {
-    color: #49a1eb;
+    color: #C3073F;
     align-items: center;
     
 }

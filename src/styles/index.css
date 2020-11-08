@@ -13,8 +13,8 @@ main {
   text-align: center;
 }
 body {
-  background-color: black;
-  background-image: url("https://i.imgur.com/8BD1W2a.gif");
+  background-color: #0c0032;
+  
   background-size: cover auto;
   background-repeat: space;
   background-attachment: fixed;
@@ -33,20 +33,23 @@ h1 {
 
 h2 {
   margin-top: 1.5em;
+  
 }
 p {
   font-size: 16px;
 }
 a {
+  font-size: 20px;
+  font-weight: bold;
   
-  border-bottom: 1px solid white;
-  color: bisque;
+  border-bottom: 1px solid #C3073F;
+  color: #C3073F;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 a:hover {
-  border-bottom: 1px solid #0076ff;
+  transform:  translateY(+2px);
 }
 
 .rainbow {
