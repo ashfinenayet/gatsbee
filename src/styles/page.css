@@ -13,21 +13,23 @@ body {
     overflow-x: hidden;
 }
 h1 {
-    
+    text-align: center;
     margin: auto;
     padding: auto;
     color: #C3073F;
 }
 h2 {
+    text-align: center;
     padding: auto;
     margin: auto;
 }
 
 .content {
-    font-family: 'Lato', sans-serif;
+    
     color: #C3073F;
     margin: auto;
     padding: auto;
+    text-align: center;
 
 }
 

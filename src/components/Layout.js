@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { List } from "@material-ui/core"
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to}>{props.children}</Link>
@@ -16,6 +17,7 @@ export default function Layout({ children }) {
           <ListLink to="/Blog/">Blog</ListLink>
           <ListLink to="/About/">About</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
+          <ListLink to="/Images/">Images</ListLink>
         </ul>
       </header>
       {children}
