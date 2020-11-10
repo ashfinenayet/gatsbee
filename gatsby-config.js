@@ -1,6 +1,10 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: 'Ashfin Enayet',
+    title: "Ashfin Enayet",
     author: "Ashfin Enayet",
     description: "Just a website about me, THE Ashfin Enayet",
     siteUrl: "https://ashfin.me/",
@@ -29,7 +33,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src`,
         name: `src`,
-
       },
     },
     {
@@ -38,7 +41,6 @@ module.exports = {
         trackingId: "UA-171507543-1",
       },
     },
-
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -53,16 +55,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-transition-link",
       options: {
-        name: 'Gatsby + Node.js (TypeScript) API',
-        short_name: 'Gatsby + Node.js (TypeScript)',
-        start_url: '/',
-        icon: 'src/images/favicon.png',
-
-
+        layout: require.resolve(`./src/components/Layout.js`),
       },
     },
+ 
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Gatsby + Node.js (TypeScript) API",
+        short_name: "Gatsby + Node.js (TypeScript)",
+        start_url: "/",
+        icon: "src/images/favicon.png",
+      },
+    },
+    "gatsby-plugin-react-leaflet",
   ],
-}
-
+};
