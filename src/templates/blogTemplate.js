@@ -8,14 +8,14 @@ export default function Template({ data }) {
     const { title, author, date } = post.frontmatter;
     
     return (
-      
+      <Helmet>
         <Link to="/Blog/">Back to blogs</Link>
         <div className="blog">
         <h1>{title}</h1>
         <p>Posted by {author} on {date}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
-     
+      </Helmet>
     )
   };
 
