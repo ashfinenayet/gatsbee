@@ -3,7 +3,7 @@ import '../styles/page.css';
 
 
 import { Helmet } from 'react-helmet';
-import Layout from '../components/Layout';
+
 import SocialFollow from '../components/SocialFollow';
 
 const About = () => (
@@ -14,7 +14,7 @@ const About = () => (
         <Helmet>
             <title>About Me</title>
         </Helmet>
-        <Layout>
+        
 
             <h1>About Me</h1>
             <h2>Ashfin Enayet</h2>
@@ -25,7 +25,7 @@ const About = () => (
 
 
             <SocialFollow />
-        </Layout>
+       
     </div>
 
 )

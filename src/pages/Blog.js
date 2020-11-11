@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from "gatsby";
-import Layout from '../components/Layout.js';
+
 import Post from "../components/Post";
 import { Helmet } from 'react-helmet';
 export const AllBlogsQuery = graphql`
@@ -22,7 +22,7 @@ export const AllBlogsQuery = graphql`
 `
 
 const Blog = ({ data }) => (
-  <Layout>
+  <>
     <Helmet><title>Blog</title></Helmet>
     <h1>Blog</h1>
     { 
@@ -41,7 +41,7 @@ const Blog = ({ data }) => (
         )
       })
     }
-  </Layout>
+  </>
 );
 
 export default Blog;
