@@ -1,8 +1,11 @@
 import React from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/page.css';
-import Layout from '../components/Layout.js';
 
+
+
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import { Helmet } from 'react-helmet';
 
@@ -17,13 +20,18 @@ const Images = () => (
     <Helmet>
       <title>Images</title>
     </Helmet>
-    <Layout>
+    
     <h1>Locations</h1>
-    <h2><a href="#">Richmond</a></h2>
-    <h2><a href="#">Henrico</a></h2>
-     
+    <div class = "anilink-container">
+    <AniLink paintDrip to="/richmond" hex="#C3073F" >
+  Richmond
+</AniLink>
+</div>
+    <AniLink paintDrip to="/henrico" hex="#C3073F" >
+  Henrico
+</AniLink>
 
-    </Layout>
+    
   </section>
 
 
