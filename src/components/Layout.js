@@ -14,10 +14,10 @@ export default function Layout({ children }) {
           <h3 style={{ color: '#C3073F' , display: `inline`, fontWeight: `bold`  }}>Ashfin Enayet</h3>
         </Link>
         <ul style={{  listStyle: `none`, float: `right` }}>
-          <ListLink to="/Blog/">Blog</ListLink>
+          
           <ListLink to="/About/">About</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
-          <ListLink to="/Images/">Images</ListLink>
+          
           
         </ul>
       </header>
