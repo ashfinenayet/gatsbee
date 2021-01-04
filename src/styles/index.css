@@ -13,8 +13,8 @@ main {
   text-align: center;
 }
 body {
-  background-color: #0c0032;
-  
+  background: #ad5389; /* fallback for old browsers */
+  background: linear-gradient(35deg,#ad5389,  #3c1053);
   background-size: cover auto;
   background-repeat: space;
   background-attachment: fixed;
@@ -43,14 +43,15 @@ a {
   font-size: 20px;
   font-weight: bold;
   
-  border-bottom: 1px solid #C3073F;
+  
   color: #C3073F;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 a:hover {
-  transform:  translateY(+2px);
+  
+  color:#C3073F;
 }
 
 .rainbow {
