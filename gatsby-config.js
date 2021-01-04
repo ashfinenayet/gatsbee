@@ -3,6 +3,12 @@ require("dotenv").config({
 });
 
 module.exports = {
+  flags: { 
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    DEV_SSR: true,
+    QUERY_ONDEMAND: true,
+  },
   siteMetadata: {
     title: "Ashfin Enayet",
     author: "Ashfin Enayet",
@@ -67,7 +73,7 @@ module.exports = {
         name: "Gatsby + Node.js (TypeScript) API",
         short_name: "Gatsby + Node.js (TypeScript)",
         start_url: "/",
-        icon: "src/images/favicon.png",
+        icon: "src/images/android-chrome-512x512.png",
       },
     },
   ],
