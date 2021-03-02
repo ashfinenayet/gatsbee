@@ -1,9 +1,10 @@
-h1 {
+h4 {
     align-content: center;
     margin-bottom: 1 rem;
 }
 .social-container {
-    
+    display: flex;
+    align-items: center;
     padding: .003px 200px ;
     align-content: center;
     margin: .00005rem;
@@ -13,8 +14,9 @@ h1 {
 a.social {
     margin: 0 1rem;
   transition: transform 250ms;
-  display: inline-block;
+  display: flex;
   justify-content: center;
+  
   
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/page.css';
-
+import Layout from '../components/Layout';
 
 import { Helmet } from 'react-helmet';
 
@@ -14,7 +14,7 @@ const About = () => (
         <Helmet>
             <title>About Me</title>
         </Helmet>
-        
+        <Layout>
 
             <h1>About Me</h1>
             <h2>Ashfin Enayet</h2>
@@ -25,7 +25,7 @@ const About = () => (
 
 
             <SocialFollow />
-       
+       </Layout>
     </div>
 
 )

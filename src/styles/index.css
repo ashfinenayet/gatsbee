@@ -7,7 +7,7 @@ main {
   hyphens: auto;
   line-height: 1.65;
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 650px;
   min-height: 100vh;
   padding: 72px 0;
   text-align: center;
@@ -27,9 +27,11 @@ body {
   margin:10;
 }
 h1 {
-  font-size: 45px;
-  align-content: center;
+  font-size: 30px;
+  margin: auto;
+  padding: auto;
   font-weight: bold;
+  text-align: center;
 }
 
 h2 {
@@ -40,8 +42,9 @@ p {
   font-size: 16px;
 }
 a {
-  font-size: 20px;
-  font-weight: bold;
+  font-family: 'Muli';
+  font-size: 15px;
+  
   
   
   color: #C3073F;
@@ -55,40 +58,7 @@ a:hover {
 }
 
 
-.rainbow {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 50px;
-  font-family: monospace;
-  letter-spacing: 5px;
-}
-.rainbow_text_animated {
-  background: linear-gradient(
-    to right,
-    #6666ff,
-    #0099ff,
-    #00ff00,
-    #ff3399,
-    #6666ff
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow_animation 6s ease-in-out infinite;
-  background-size: 400% 100%;
-  
-}
 
-@keyframes rainbow_animation {
-  0%,
-  100% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 100% 0;
-  }
-}
 
 code,
 pre {
@@ -101,3 +71,4 @@ code:before,
 code:after {
   content: "\`";
 }
+

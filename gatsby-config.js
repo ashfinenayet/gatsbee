@@ -7,7 +7,7 @@ module.exports = {
     PRESERVE_WEBPACK_CACHE: true,
     FAST_DEV: true,
     DEV_SSR: true,
-    QUERY_ONDEMAND: true,
+    QUERY_ON_DEMAND: true,
   },
   siteMetadata: {
     title: "Ashfin Enayet",
@@ -60,12 +60,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: "gatsby-plugin-transition-link",
-      options: {
-        layout: require.resolve(`./src/components/Layout.js`),
-      },
-    },
+  
  
     {
       resolve: `gatsby-plugin-manifest`,
