@@ -1,36 +1,30 @@
 h4 {
-    align-content: center;
-    margin-bottom: 1 rem;
+  padding: 10px ;
+  text-align: center;
 }
 .social-container {
-    display: flex;
-    align-items: center;
-    padding: .003px 200px ;
-    align-content: center;
-    margin: .00005rem;
-  }
+  
+  padding: 10px 245px;
+  justify-content: center;
+}
 
 
 a.social {
-    margin: 0 1rem;
-  transition: transform 250ms;
-  display: flex;
-  justify-content: center;
-  
-  
+  margin: 0 1rem;
+transition: transform 250ms;
+display: inline-block;
+justify-content: center;
+
 }
 
 a.social:hover {
-    transform:  translateY(-2px);
+  transform:  translateY(-2px);
 }
 
 a.twitter {
-    color: #C3073F;
-    align-items: center;
-    
+  color: #49a1eb;
+  
 }
 a.instagram {
-  padding: 25px 50 px;
-  margin-top: auto;
+  color:#49a1eb
 }
-

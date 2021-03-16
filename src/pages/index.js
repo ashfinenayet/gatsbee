@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/index.css';
 import '../styles/landingpage.css';
+
 import "fontsource-muli"
 import Layout from '../components/Layout';
 import { Helmet } from 'react-helmet';

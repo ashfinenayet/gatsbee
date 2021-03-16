@@ -47,7 +47,7 @@ class ContactForm extends Component {
           <Helmet><title>Contact Me</title></Helmet>
           <div className="content">
           <Layout>
-          <h1 className="p-heading1">Get in Touch</h1>
+          <h1 className="p-heading1">Contact Me</h1>
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup controlId="formBasicEmail">
               <Label className="text-muted">Email address</Label>
