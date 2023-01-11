@@ -27,7 +27,7 @@
     "gatsby-remark-embed-spotify": "^2.1.1",
     "gatsby-remark-images": "^3.3.28",
     "gatsby-source-filesystem": "^2.3.16",
-    "gatsby-transformer-remark": "^2.8.22",
+    "gatsby-transformer-remark": "^5.25.1",
     "gsap": "^3.5.1",
     "markdown-to-jsx": "^6.11.4",
     "proptypes": "^1.1.0",
